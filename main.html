@@ -1,16 +1,269 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <title>Interstellar</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      background-color: #0a0a1a;
+      color: #e0e0e0;
+    }
 
+    header {
+      background-color: #111133;
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 2px solid #4444aa;
+    }
+
+    header h1 {
+      font-size: 48px;
+      color: #aaaaff;
+      margin: 0;
+      letter-spacing: 6px;
+    }
+
+    header p {
+      color: #888;
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    nav {
+      background-color: #16163a;
+      padding: 14px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #aaaaff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .page-layout {
+      display: flex;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .main-content {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .summary, section {
+      background-color: #111133;
+      border: 1px solid #2a2a5a;
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    h2 {
+      color: #aaaaff;
+      border-bottom: 1px solid #2a2a5a;
+      padding-bottom: 8px;
+      margin-top: 0;
+    }
+
+    aside {
+      flex: 1;
+      background-color: #111133;
+      border: 1px solid #2a2a5a;
+      border-radius: 8px;
+      padding: 20px;
+      align-self: flex-start;
+    }
+
+    aside h3 {
+      color: #aaaaff;
+      margin-top: 0;
+      border-bottom: 1px solid #2a2a5a;
+      padding-bottom: 8px;
+    }
+
+    aside p {
+      margin: 10px 0;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    aside .label {
+      color: #888;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    aside .value {
+      font-size: 18px;
+      font-weight: bold;
+      color: #e0e0e0;
+    }
+
+    .actor-card {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      background-color: #16163a;
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin-bottom: 12px;
+    }
+
+    .actor-name {
+      font-size: 17px;
+      font-weight: bold;
+      color: #ccccff;
+    }
+
+    .actor-role {
+      font-size: 13px;
+      color: #888;
+      font-style: italic;
+    }
+
+    blockquote {
+      border-left: 4px solid #4444aa;
+      margin: 16px 0;
+      padding: 12px 20px;
+      background-color: #16163a;
+      border-radius: 0 6px 6px 0;
+      font-style: italic;
+      font-size: 17px;
+      color: #ddd;
+      line-height: 1.7;
+    }
+
+    blockquote cite {
+      display: block;
+      margin-top: 10px;
+      font-size: 13px;
+      color: #888;
+      font-style: normal;
+    }
+
+    footer {
+      background-color: #111133;
+      border-top: 2px solid #4444aa;
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+
+    footer span {
+      color: #aaaaff;
+    }
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <header>
+    <h1>INTERSTELLAR</h1>
+    <p>Mankind was born on Earth. It was never meant to die here.</p>
+  </header>
+
+  <nav>
+    <a id="nav-actor" href="#actor">Actors</a>
+    <a id="nav-quote" href="#quote">Quotes</a>
+  </nav>
+
+  <div class="page-layout">
+
+    <div class="main-content">
+
+      <div class="summary">
+        <h2>Summary</h2>
+        <p>
+          Interstellar (2014) follows Cooper, a former NASA pilot turned farmer, in a near-future Earth where crops are failing and humanity faces extinction. When a secret NASA program discovers a wormhole near Saturn, Cooper is recruited to lead a crew through it in search of a new habitable planet. Leaving behind his daughter Murph, he embarks on an extraordinary journey across space and time, confronting the limits of human endurance — and love — in the face of the unknown.
+        </p>
+      </div>
+
+      <section id="actor">
+        <h2>Actors</h2>
+
+        <div class="actor-card">
+          <span class="actor-name">Matthew McConaughey</span>
+          <span class="actor-role">as Joseph Cooper — Former NASA pilot and father</span>
+        </div>
+
+        <div class="actor-card">
+          <span class="actor-name">Anne Hathaway</span>
+          <span class="actor-role">as Dr. Amelia Brand — NASA scientist and crew member</span>
+        </div>
+
+        <div class="actor-card">
+          <span class="actor-name">Jessica Chastain</span>
+          <span class="actor-role">as Murph (adult) — Cooper's daughter and physicist</span>
+        </div>
+
+        <div class="actor-card">
+          <span class="actor-name">Michael Caine</span>
+          <span class="actor-role">as Professor John Brand — Head of NASA's secret program</span>
+        </div>
+
+      </section>
+
+      <section id="quote">
+        <h2>Quotes</h2>
+
+        <blockquote>
+          "Do not go gentle into that good night. Old age should burn and rave at close of day. Rage, rage against the dying of the light."
+          <cite>— Dylan Thomas, recited by Professor Brand</cite>
+        </blockquote>
+
+        <blockquote>
+          "We used to look up at the sky and wonder at our place in the stars. Now we just look down and worry about our place in the dirt."
+          <cite>— Cooper</cite>
+        </blockquote>
+
+      </section>
+
+    </div>
+
+    <aside>
+      <h3>Movie Info</h3>
+
+      <p>
+        <span class="label">IMDb Rating</span><br>
+        <span class="value">⭐ 8.7 / 10</span>
+      </p>
+
+      <p>
+        <span class="label">Release Date</span><br>
+        <span class="value">Nov 7, 2014</span>
+      </p>
+
+      <p>
+        <span class="label">Genre</span><br>
+        <span class="value">Sci-Fi / Drama</span>
+      </p>
+
+      <p>
+        <span class="label">Runtime</span><br>
+        <span class="value">2h 49min</span>
+      </p>
+    </aside>
+
+  </div>
+
+  <footer>
+    Produced by: <span>Emma Thomas &amp; Christopher Nolan</span>
+  </footer>
 
 </body>
-
 </html>
